@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body{
+        color: #333;
+        height: 2000px;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #512;
+        box-shadow: 10px 0 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 9%;
+        z-index: 3;
+    }
+    .logo{
+        font-size: 32px;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .cart-icon{
+        font-size: 27px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+    }
+     .cart-item-count{
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        background-color: rgb(215, 64, 64);
+        color:#fff;
+        padding: 10px 10px;
+        font-size: 16px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .shop{
+        padding: 100px 9% 30px;
+    }
+    .section-title{
+       font-size: 35px;
+       text-align: center;
+       margin-bottom: 15px;
+       font-weight: 700;
+   }   
+   .product-content{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 30px;
+  }
+   .product-box .img-box{
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+   }
+   .img-box img{
+     width: 100%;
+    transition: 0.5s;
+    z-index: 2;
+  }
+  .img-box:hover img {
+    transform: scale(1.1);
+}
+.product-box .product-title{
+  font-size: 20px;
+  margin-top: 19ox;
+}
+.product-box .price-and-cart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-and-cart .price {
+  font-size: 18px;
+  font-weight: 500;
+}
+.add-cart{
+  padding: 19px;
+  background: #512;
+  border-radius: 6px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+ </style>
+ </head>
+<body>
+    <header>
+        <a href="" class="logo">Ali's Shop</a>
+        <div class="cart-icon">
+            <i class="ri-shopping-cart-fill"></i>
+            <span class="cart-item-count"></span>
+        </div>
+    </header>
+
+
+    <div class="cart">
+
+    </div>
+
+    <section class="shop">
+        <h2 class="section-title">Shop Product</h2>
+        <div class="product-content">
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Mens Fleece Thermal Lined.jpg" >
+          </div>
+              <h2 class="product-title">Mens Fleece Thermal Lined Fleece </h2>
+              <div class="price-and-cart">
+                <span class="price">$30</span>
+                <i class="ri-shopping-cart-fill add-cart"></i>
+              </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Mens Dress Shirt Business.jpg" >
+          </div>
+              <h2 class="product-title"> Mens Dress Shirt Business</h2>
+              <div class="price-and-cart">
+                <span class="price">$30</span>
+                <i class="ri-shopping-cart-fill add-cart"></i>
+              </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Denim Shirt Long Sleeve.jpg" >
+          </div>
+              <h2 class="product-title"> Men's Long Sleeve business</h2>
+              <div class="price-and-cart">
+                <span class="price">$30</span>
+                <i class="ri-shopping-cart-fill add-cart"></i>
+              </div>
+            </div>
+
+
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Men's Long Sleeve Shirt.jpg" >
+          </div>
+              <h2 class="product-title"> Men's Long Sleeve Shirt</h2>
+              <div class="price-and-cart">
+                <span class="price">$30</span>
+                <i class="ri-shopping-cart-fill add-cart"></i>
+              </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Mens Dress Shirt Business.jpg" >
+          </div>
+              <h2 class="product-title"> Denim Shirt Long Sleeve</h2>
+              <div class="price-and-cart">
+                <span class="price">$30</span>
+                <i class="ri-shopping-cart-fill add-cart"></i>
+              </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Men's Casual Regular  Shirt.jpg" >
+          </div>
+              <h2 class="product-title"> Men's Casual Regular  Shirt</h2>
+              <div class="price-and-cart">
+                <span class="price">$30</span>
+                <i class="ri-shopping-cart-fill add-cart"></i>
+              </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Mens Checkered Twill Shirt.jpg" >
+          </div>
+              <h2 class="product-title"> Mens Checkered Twill Shirt</h2>
+              <div class="price-and-cart">
+                <span class="price">$30</span>
+                <i class="ri-shopping-cart-fill add-cart"></i>
+              </div>
+            </div>
+
+
+            <div class="product-box">
+                <div class="img-box">
+                    <img src="Regular Long Sleeve  Shirt.jpg" >
+          </div>
+              <h2 class="product-title"> Regular Long Sleeve  Shirt</h2>
+              <div class="price-and-cart">
+                <span class="price">$30</span>
+                <i class="ri-shopping-cart-fill add-cart"></i>
+              </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
